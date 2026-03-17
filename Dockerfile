@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Copier les fichiers
 COPY requirements.txt .
 COPY app.py .
-COPY models/best_model_joblib ./best_model_joblib
+COPY models/ ./models/
 
 # Installer les dépendances Python
 RUN pip install --upgrade pip
